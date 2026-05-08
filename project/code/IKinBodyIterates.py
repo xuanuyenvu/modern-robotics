@@ -252,7 +252,7 @@ def IKinBodyIterates(Blist, M, T, thetalist0, eomg, ev):
 
     # Save all iterates to CSV
     np.savetxt(
-        "iterates.csv",
+        "../iterates.csv",
         np.array(iterates),
         delimiter=","
     )
