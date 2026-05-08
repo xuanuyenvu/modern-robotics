@@ -1,0 +1,364 @@
+PS D:\Master\Coursera\modern-robotics\project> cd code
+PS D:\Master\Coursera\modern-robotics\project\code> python main.py
+
+Iteration 0:
+
+Joint Vector:
+1.000, 2.000, 1.500, 2.000, 1.000, 1.000
+
+SE(3) End-Effector Configuration:
+[[-0.815  0.564 -0.132 -0.976]
+ [-0.428 -0.432  0.794  1.58 ]
+ [ 0.39   0.704  0.594 -1.416]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-1.211, 2.191, 0.239, 0.581, 1.573, 2.048
+
+Angular Error Magnitude ||ω_b||: 2.515064
+Linear Error Magnitude ||v_b||: 2.646497
+
+Iteration 1:
+
+Joint Vector:
+0.129, -2.704, 12.540, -7.700, 0.218, 3.574
+
+SE(3) End-Effector Configuration:
+[[-0.797 -0.555 -0.24   0.145]
+ [-0.301  0.019  0.954  2.835]
+ [-0.524  0.832 -0.182 -1.552]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-2.630, 1.413, -0.419, 1.040, 4.203, 2.181
+
+Angular Error Magnitude ||ω_b||: 3.014903
+Linear Error Magnitude ||v_b||: 4.848591
+
+Iteration 2:
+
+Joint Vector:
+0.860, 162.131, -324.503, 175.518, 0.007, -7.462
+
+SE(3) End-Effector Configuration:
+[[-0.541 -0.372 -0.754 -3.215]
+ [-0.624 -0.423  0.656  3.564]
+ [-0.564  0.826 -0.004 -0.467]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-2.070, 1.091, -0.501, 1.844, 5.245, -0.984
+
+Angular Error Magnitude ||ω_b||: 2.392714
+Linear Error Magnitude ||v_b||: 5.646115
+
+Iteration 3:
+
+Joint Vector:
+1.581, 165.619, -334.050, 154.816, -1.720, 18.799
+
+SE(3) End-Effector Configuration:
+[[ 0.986  0.059  0.154 -3.648]
+ [ 0.128 -0.861 -0.492  0.882]
+ [ 0.103  0.505 -0.857 -0.885]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-0.681, -0.948, -1.436, 1.410, 3.455, -0.558
+
+Angular Error Magnitude ||ω_b||: 1.850817
+Linear Error Magnitude ||v_b||: 3.773451
+
+Iteration 4:
+
+Joint Vector:
+-4.128, 234.855, -471.798, 223.322, -3.657, 12.471
+
+SE(3) End-Effector Configuration:
+[[-0.691  0.416  0.591 -5.452]
+ [ 0.155 -0.714  0.683 -3.175]
+ [ 0.706  0.564  0.429 -1.261]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-1.119, 2.502, 1.164, -8.265, 0.482, -0.304
+
+Angular Error Magnitude ||ω_b||: 2.977984
+Linear Error Magnitude ||v_b||: 8.284332
+
+Iteration 5:
+
+Joint Vector:
+-0.442, 137.788, -285.172, 126.330, -4.436, 5.586
+
+SE(3) End-Effector Configuration:
+[[ 0.671 -0.388 -0.632  0.981]
+ [ 0.499  0.867 -0.003  1.098]
+ [ 0.549 -0.314  0.775 -0.88 ]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+1.330, 1.565, -2.025, -1.635, -0.810, 1.086
+
+Angular Error Magnitude ||ω_b||: 2.884561
+Linear Error Magnitude ||v_b||: 2.123295
+
+Iteration 6:
+
+Joint Vector:
+5.503, 143.261, -297.273, 133.704, -8.307, -0.841
+
+SE(3) End-Effector Configuration:
+[[ 0.128 -0.916 -0.379  1.001]
+ [-0.97  -0.036 -0.24   0.897]
+ [ 0.206  0.399 -0.894 -1.007]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-1.721, 0.317, -2.182, -1.729, 1.520, 1.726
+
+Angular Error Magnitude ||ω_b||: 2.797391
+Linear Error Magnitude ||v_b||: 2.877510
+
+Iteration 7:
+
+Joint Vector:
+7.343, 140.402, -291.720, 132.912, -9.595, -0.546
+
+SE(3) End-Effector Configuration:
+[[ 0.136  0.328  0.935  0.435]
+ [ 0.54   0.767 -0.348  0.568]
+ [-0.831  0.552 -0.073 -0.717]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+1.156, -0.416, -0.467, -1.089, -0.849, -0.281
+
+Angular Error Magnitude ||ω_b||: 1.314468
+Linear Error Magnitude ||v_b||: 1.408977
+
+Iteration 8:
+
+Joint Vector:
+11.258, 139.120, -290.520, 147.307, -5.104, 13.376
+
+SE(3) End-Effector Configuration:
+[[ 0.808 -0.542  0.23   0.69 ]
+ [-0.552 -0.561  0.617 -0.   ]
+ [-0.206 -0.625 -0.753 -0.171]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-2.262, -1.372, -1.248, -1.244, -0.453, 0.854
+
+Angular Error Magnitude ||ω_b||: 2.925527
+Linear Error Magnitude ||v_b||: 1.575216
+
+Iteration 9:
+
+Joint Vector:
+-9.601, 141.336, -290.332, 151.315, 9.580, -6.025
+
+SE(3) End-Effector Configuration:
+[[ 0.482 -0.873  0.07   0.114]
+ [ 0.066  0.116  0.991 -1.537]
+ [-0.874 -0.473  0.113 -1.346]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+2.947, 0.753, -0.141, -2.089, 2.131, -0.418
+
+Angular Error Magnitude ||ω_b||: 3.045306
+Linear Error Magnitude ||v_b||: 3.013828
+
+Iteration 10:
+
+Joint Vector:
+-12.635, 148.285, -299.729, 150.779, 10.164, -8.771
+
+SE(3) End-Effector Configuration:
+[[-0.049  0.813 -0.58   0.636]
+ [ 0.539 -0.467 -0.701  4.01 ]
+ [-0.841 -0.347 -0.415 -0.82 ]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-0.588, -0.536, 0.223, -1.889, -0.115, 3.810
+
+Angular Error Magnitude ||ω_b||: 0.826328
+Linear Error Magnitude ||v_b||: 4.254392
+
+Iteration 11:
+
+Joint Vector:
+-5.332, 110.778, -222.241, 115.534, 15.129, -2.013
+
+SE(3) End-Effector Configuration:
+[[ 0.736 -0.466  0.492 -2.002]
+ [ 0.628  0.198 -0.752  2.333]
+ [ 0.253  0.862  0.439 -1.173]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.818, -0.225, -1.894, -0.021, 1.326, 2.794
+
+Angular Error Magnitude ||ω_b||: 2.075336
+Linear Error Magnitude ||v_b||: 3.092791
+
+Iteration 12:
+
+Joint Vector:
+-5.045, 111.560, -228.283, 119.433, 15.601, -5.172
+
+SE(3) End-Effector Configuration:
+[[-0.053  0.416  0.908 -0.981]
+ [-0.009  0.909 -0.417  0.565]
+ [-0.999 -0.031 -0.045 -1.152]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+1.141, -0.022, 0.053, -1.268, 0.132, 0.667
+
+Angular Error Magnitude ||ω_b||: 1.142377
+Linear Error Magnitude ||v_b||: 1.439100
+
+Iteration 13:
+
+Joint Vector:
+-4.408, 113.120, -232.995, 129.999, 14.009, 2.281
+
+SE(3) End-Effector Configuration:
+[[ 0.782  0.614  0.106 -0.252]
+ [-0.333  0.555 -0.762 -0.265]
+ [-0.527  0.561  0.639 -0.105]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.408, 0.600, -0.830, -0.394, -0.059, -0.321
+
+Angular Error Magnitude ||ω_b||: 1.102244
+Linear Error Magnitude ||v_b||: 0.511448
+
+Iteration 14:
+
+Joint Vector:
+-4.543, 113.986, -234.219, 129.619, 14.194, 1.631
+
+SE(3) End-Effector Configuration:
+[[ 0.052  0.973  0.224 -0.582]
+ [ 0.052  0.221 -0.974  0.07 ]
+ [-0.997  0.063 -0.039 -0.294]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.225, -0.046, -0.058, -0.391, 0.097, -0.029
+
+Angular Error Magnitude ||ω_b||: 0.236722
+Linear Error Magnitude ||v_b||: 0.403529
+
+Iteration 15:
+
+Joint Vector:
+-4.574, 113.312, -232.945, 129.051, 13.997, 1.574
+
+SE(3) End-Effector Configuration:
+[[ 0.002  1.    -0.001 -0.512]
+ [ 0.007 -0.001 -1.     0.08 ]
+ [-1.     0.002 -0.007 -0.028]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-0.001, -0.007, -0.002, -0.128, 0.012, -0.021
+
+Angular Error Magnitude ||ω_b||: 0.007204
+Linear Error Magnitude ||v_b||: 0.129819
+
+Iteration 16:
+
+Joint Vector:
+-4.600, 112.641, -231.585, 128.369, 14.024, 1.571
+
+SE(3) End-Effector Configuration:
+[[-0.     1.    -0.    -0.5  ]
+ [-0.    -0.    -1.     0.102]
+ [-1.    -0.     0.    -0.086]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+-0.000, 0.000, 0.000, -0.186, 0.000, 0.002
+
+Angular Error Magnitude ||ω_b||: 0.000184
+Linear Error Magnitude ||v_b||: 0.186335
+
+Iteration 17:
+
+Joint Vector:
+-4.600, 113.148, -232.642, 128.919, 14.024, 1.571
+
+SE(3) End-Effector Configuration:
+[[-0.     1.    -0.    -0.5  ]
+ [ 0.    -0.    -1.     0.101]
+ [-1.    -0.    -0.    -0.009]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.000, 0.000, 0.000, -0.109, 0.000, 0.001
+
+Angular Error Magnitude ||ω_b||: 0.000000
+Linear Error Magnitude ||v_b||: 0.109087
+
+Iteration 18:
+
+Joint Vector:
+-4.602, 111.586, -229.386, 127.225, 14.027, 1.571
+
+SE(3) End-Effector Configuration:
+[[-0.     1.    -0.    -0.499]
+ [ 0.    -0.    -1.     0.094]
+ [-1.    -0.    -0.    -0.802]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.000, 0.000, 0.000, -0.902, -0.001, -0.006
+
+Angular Error Magnitude ||ω_b||: 0.000000
+Linear Error Magnitude ||v_b||: 0.901593
+
+Iteration 19:
+
+Joint Vector:
+-4.583, 112.648, -231.599, 128.375, 14.008, 1.571
+
+SE(3) End-Effector Configuration:
+[[-0.     1.    -0.    -0.498]
+ [ 0.    -0.    -1.     0.08 ]
+ [-1.    -0.    -0.    -0.084]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.000, 0.000, 0.000, -0.184, -0.002, -0.020
+
+Angular Error Magnitude ||ω_b||: 0.000000
+Linear Error Magnitude ||v_b||: 0.184937
+
+Iteration 20:
+
+Joint Vector:
+-4.600, 113.155, -232.658, 128.927, 14.024, 1.571
+
+SE(3) End-Effector Configuration:
+[[-0.     1.    -0.    -0.5  ]
+ [ 0.    -0.    -1.     0.101]
+ [-1.    -0.    -0.    -0.01 ]
+ [ 0.     0.     0.     1.   ]]
+
+Error Twist Vb:
+0.000, 0.000, 0.000, -0.110, -0.000, 0.001
+
+Angular Error Magnitude ||ω_b||: 0.000000
+Linear Error Magnitude ||v_b||: 0.109636
+Success: False
+Solution (radians):
+[  -4.59966197  113.15529801 -232.65796577  128.92744572   14.02443993
+    1.57079632]
+PS D:\Master\Coursera\modern-robotics\project\code> 
