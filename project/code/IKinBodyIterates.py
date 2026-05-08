@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def se3ToVec(se3mat):
     return np.r_[[se3mat[2][1], se3mat[0][2], se3mat[1][0]],
                  [se3mat[0][3], se3mat[1][3], se3mat[2][3]]]
@@ -151,23 +152,109 @@ def Adjoint(T):
 
 
 def IKinBodyIterates(Blist, M, T, thetalist0, eomg, ev):
+# Initial guess
     thetalist = np.array(thetalist0).copy()
+
+    # Store all iterations
+    iterates = []
+    iterates.append(thetalist.copy())
+
+    # Iteration settings
     i = 0
     maxiterations = 20
-    iterates = []
-    
-    Vb = se3ToVec(MatrixLog6(np.dot(TransInv(FKinBody(M, Blist, \
-                                                      thetalist)), T)))
-    err = np.linalg.norm([Vb[0], Vb[1], Vb[2]]) > eomg \
-          or np.linalg.norm([Vb[3], Vb[4], Vb[5]]) > ev
+
+    # Initial error twist
+    Vb = se3ToVec(
+        MatrixLog6(
+            np.dot(
+                TransInv(FKinBody(M, Blist, thetalist)),
+                T
+            )
+        )
+    )
+
+    # Error magnitudes
+    omega_err = np.linalg.norm(Vb[0:3])
+    v_err = np.linalg.norm(Vb[3:6])
+
+    # Check convergence
+    err = omega_err > eomg or v_err > ev
+
+    # Forward kinematics
+    Tsb = FKinBody(M, Blist, thetalist)
+
+    # Print iteration 0
+    print(f"\nIteration {i}:")
+
+    print("\nJoint Vector:")
+    print(", ".join(f"{x:.3f}" for x in thetalist))
+
+    print("\nSE(3) End-Effector Configuration:")
+    print(np.round(Tsb, 3))
+
+    print("\nError Twist Vb:")
+    print(", ".join(f"{x:.3f}" for x in Vb))
+
+    print(f"\nAngular Error Magnitude ||ω_b||: {omega_err:.6f}")
+    print(f"Linear Error Magnitude ||v_b||: {v_err:.6f}")
+
+    # Newton-Raphson loop
     while err and i < maxiterations:
-        thetalist = thetalist \
-                    + np.dot(np.linalg.pinv(JacobianBody(Blist, \
-                                                         thetalist)), Vb)
-        i = i + 1
-        Vb \
-        = se3ToVec(MatrixLog6(np.dot(TransInv(FKinBody(M, Blist, \
-                                                       thetalist)), T)))
-        err = np.linalg.norm([Vb[0], Vb[1], Vb[2]]) > eomg \
-              or np.linalg.norm([Vb[3], Vb[4], Vb[5]]) > ev
+
+        # Newton step
+        thetalist = thetalist + np.dot(
+            np.linalg.pinv(
+                JacobianBody(Blist, thetalist)
+            ),
+            Vb
+        )
+
+        # Save iteration
+        iterates.append(thetalist.copy())
+
+        # Update iteration counter
+        i += 1
+
+        # Compute new error twist
+        Vb = se3ToVec(
+            MatrixLog6(
+                np.dot(
+                    TransInv(FKinBody(M, Blist, thetalist)),
+                    T
+                )
+            )
+        )
+
+        # Compute FK
+        Tsb = FKinBody(M, Blist, thetalist)
+
+        # Compute errors
+        omega_err = np.linalg.norm(Vb[0:3])
+        v_err = np.linalg.norm(Vb[3:6])
+
+        # Print iteration info
+        print(f"\nIteration {i}:")
+
+        print("\nJoint Vector:")
+        print(", ".join(f"{x:.3f}" for x in thetalist))
+
+        print("\nSE(3) End-Effector Configuration:")
+        print(np.round(Tsb, 3))
+
+        print("\nError Twist Vb:")
+        print(", ".join(f"{x:.3f}" for x in Vb))
+
+        print(f"\nAngular Error Magnitude ||ω_b||: {omega_err:.6f}")
+        print(f"Linear Error Magnitude ||v_b||: {v_err:.6f}")
+
+        # Check convergence
+        err = omega_err > eomg or v_err > ev
+
+    # Save all iterates to CSV
+    np.savetxt(
+        "iterates.csv",
+        np.array(iterates),
+        delimiter=","
+    )
+
     return (thetalist, not err)
