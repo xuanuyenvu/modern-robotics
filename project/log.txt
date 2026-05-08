@@ -1,211 +1,74 @@
-PS D:\Master\Coursera\modern-robotics\project> cd .\code\
+PS D:\Master\Coursera\modern-robotics\project> cd code
 PS D:\Master\Coursera\modern-robotics\project\code> python main.py
 
 Iteration 0:
 
 Joint Vector:
--1.000, -1.500, 2.000, -1.000, -1.500, 0.500
+2.300, -0.800, 1.300, -0.500, -0.300, -1.300
 
 SE(3) End-Effector Configuration:
-[[-0.89   0.191 -0.413  0.285]
- [-0.234  0.587  0.775 -0.231]
- [ 0.391  0.786 -0.478  0.202]
+[[ 0.229  0.826 -0.516 -0.55 ]
+ [-0.138 -0.497 -0.857  0.334]
+ [-0.964  0.267  0.     0.111]
  [ 0.     0.     0.     1.   ]]
 
 Error Twist Vb:
-1.634, -2.296, 0.975, 1.041, -0.148, -0.404
+-0.538, 0.073, -0.264, 0.029, 0.110, 0.215
 
-Angular Error Magnitude ||ω_b||: 2.982162
-Linear Error Magnitude ||v_b||: 1.126087
+Angular Error Magnitude ||ω_b||: 0.604028
+Linear Error Magnitude ||v_b||: 0.242947
 
 Iteration 1:
 
 Joint Vector:
--3.648, -3.282, 2.336, -2.005, -2.592, 0.382
+2.589, -0.955, 1.601, -0.398, -0.550, -1.801
 
 SE(3) End-Effector Configuration:
-[[ 0.976 -0.214 -0.035  0.096]
- [ 0.013 -0.104  0.994 -0.098]
- [-0.216 -0.971 -0.099  0.433]
+[[-0.02   1.    -0.017 -0.514]
+ [-0.128 -0.019 -0.992  0.107]
+ [-0.992 -0.017  0.128  0.118]
  [ 0.     0.     0.     1.   ]]
 
 Error Twist Vb:
--2.379, -1.911, -0.085, 0.100, -0.360, 1.010
+-0.018, 0.128, 0.019, 0.019, 0.014, 0.006
 
-Angular Error Magnitude ||ω_b||: 3.052157
-Linear Error Magnitude ||v_b||: 1.076687
+Angular Error Magnitude ||ω_b||: 0.131108
+Linear Error Magnitude ||v_b||: 0.024219
 
 Iteration 2:
 
 Joint Vector:
-2.657, -1.153, 2.064, 0.948, -6.123, 5.023
+2.587, -1.023, 1.727, -0.704, -0.539, -1.571
 
 SE(3) End-Effector Configuration:
-[[ 0.709 -0.567 -0.42  -0.37 ]
- [-0.429  0.126 -0.895 -0.02 ]
- [ 0.56   0.814 -0.153  0.182]
+[[ 0.     1.    -0.015 -0.501]
+ [-0.    -0.015 -1.     0.099]
+ [-1.     0.     0.     0.103]
  [ 0.     0.     0.     1.   ]]
 
 Error Twist Vb:
--0.416, 0.391, -2.160, -0.126, -0.179, -0.089
+-0.015, 0.000, -0.000, 0.003, 0.001, -0.001
 
-Angular Error Magnitude ||ω_b||: 2.234340
-Linear Error Magnitude ||v_b||: 0.235702
+Angular Error Magnitude ||ω_b||: 0.014994
+Linear Error Magnitude ||v_b||: 0.003075
 
 Iteration 3:
 
 Joint Vector:
-2.260, -0.102, 2.760, 3.081, -6.525, -1.029
+2.586, -1.017, 1.727, -0.710, -0.555, -1.571
 
 SE(3) End-Effector Configuration:
-[[ 0.086  0.781 -0.618 -0.214]
- [ 0.09  -0.624 -0.776 -0.037]
- [-0.992  0.011 -0.124 -0.142]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
--0.673, -0.116, -0.053, -0.243, -0.316, -0.050
-
-Angular Error Magnitude ||ω_b||: 0.684447
-Linear Error Magnitude ||v_b||: 0.401929
-
-Iteration 4:
-
-Joint Vector:
-2.714, -3.680, 2.782, 7.549, -6.654, -1.910
-
-SE(3) End-Effector Configuration:
-[[-0.005  0.997 -0.079  0.089]
- [-0.13  -0.079 -0.988 -0.244]
- [-0.991  0.005  0.13   0.1  ]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
--0.079, 0.131, -0.000, -0.022, -0.602, -0.320
-
-Angular Error Magnitude ||ω_b||: 0.153037
-Linear Error Magnitude ||v_b||: 0.682646
-
-Iteration 5:
-
-Joint Vector:
-3.324, -0.594, 4.376, 3.020, -6.116, -2.131
-
-SE(3) End-Effector Configuration:
-[[-0.05   0.998  0.037  0.032]
- [ 0.081  0.041 -0.996 -0.187]
- [-0.995 -0.047 -0.083  0.472]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
-0.039, -0.082, 0.049, 0.396, -0.517, -0.282
-
-Angular Error Magnitude ||ω_b||: 0.102816
-Linear Error Magnitude ||v_b||: 0.709753
-
-Iteration 6:
-
-Joint Vector:
-45.503, -19.116, 19.635, -117.932, 30.498, 123.882
-
-SE(3) End-Effector Configuration:
-[[-0.214  0.777 -0.591 -0.124]
- [-0.941 -0.002  0.337  0.695]
- [ 0.261  0.629  0.732  0.103]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
--0.649, 1.830, -0.454, 0.517, -0.207, 0.542
-
-Angular Error Magnitude ||ω_b||: 1.993562
-Linear Error Magnitude ||v_b||: 0.776829
-
-Iteration 7:
-
-Joint Vector:
-46.396, -20.001, 20.159, -119.364, 29.901, 123.864
-
-SE(3) End-Effector Configuration:
-[[-0.034  0.716  0.697 -0.421]
- [-0.274  0.664 -0.696  0.223]
- [-0.961 -0.214  0.173  0.336]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
-0.762, 0.250, 0.139, 0.255, -0.101, 0.059
-
-Angular Error Magnitude ||ω_b||: 0.814117
-Linear Error Magnitude ||v_b||: 0.280701
-
-Iteration 8:
-
-Joint Vector:
-46.569, -20.111, 20.850, -120.014, 30.870, 123.976
-
-SE(3) End-Effector Configuration:
-[[-0.027  1.    -0.012 -0.406]
- [-0.054 -0.013 -0.998  0.041]
- [-0.998 -0.026  0.055  0.14 ]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
--0.012, 0.055, 0.026, 0.039, -0.094, -0.060
-
-Angular Error Magnitude ||ω_b||: 0.061837
-Linear Error Magnitude ||v_b||: 0.117905
-
-Iteration 9:
-
-Joint Vector:
-46.569, -19.856, 20.601, -120.127, 30.864, 124.095
-
-SE(3) End-Effector Configuration:
-[[ 0.     1.    -0.003 -0.496]
- [ 0.001 -0.003 -1.     0.097]
- [-1.     0.    -0.001  0.087]
- [ 0.     0.     0.     1.   ]]
-
-Error Twist Vb:
--0.003, -0.001, -0.000, -0.013, -0.004, -0.003
-
-Angular Error Magnitude ||ω_b||: 0.003354
-Linear Error Magnitude ||v_b||: 0.013596
-
-Iteration 10:
-
-Joint Vector:
-46.568, -19.867, 20.577, -120.090, 30.861, 124.093
-
-SE(3) End-Effector Configuration:
-[[-0.   1.  -0.  -0.5]
- [-0.  -0.  -1.   0.1]
- [-1.  -0.   0.   0.1]
+[[ 0.   1.  -0.  -0.5]
+ [ 0.  -0.  -1.   0.1]
+ [-1.   0.  -0.   0.1]
  [ 0.   0.   0.   1. ]]
 
 Error Twist Vb:
--0.000, 0.000, 0.000, 0.000, -0.000, -0.000
+-0.000, -0.000, -0.000, -0.000, -0.000, -0.000
 
-Angular Error Magnitude ||ω_b||: 0.000006
-Linear Error Magnitude ||v_b||: 0.000239
-
-Iteration 11:
-
-Joint Vector:
-46.568, -19.867, 20.576, -120.090, 30.861, 124.093
-
-SE(3) End-Effector Configuration:
-[[-0.   1.  -0.  -0.5]
- [-0.  -0.  -1.   0.1]
- [-1.  -0.   0.   0.1]
- [ 0.   0.   0.   1. ]]
-
-Error Twist Vb:
-0.000, 0.000, 0.000, -0.000, -0.000, -0.000
-
-Angular Error Magnitude ||ω_b||: 0.000000
-Linear Error Magnitude ||v_b||: 0.000000
+Angular Error Magnitude ||ω_b||: 0.000003
+Linear Error Magnitude ||v_b||: 0.000014
 Success: True
 Solution (radians):
-[  46.56848617  -19.86659174   20.57647809 -120.09040719   30.8605229
-  124.09290982]
+[ 2.5861759  -1.01705884  1.72696896 -0.70991455 -0.55541675 -1.57079167]
 PS D:\Master\Coursera\modern-robotics\project\code> 
